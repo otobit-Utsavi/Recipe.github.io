@@ -1,0 +1,16 @@
+<div class="row">   
+    <div class="col-xs-10">
+        <app-shpping-list></app-shpping-list>
+        <hr>
+       <ul class="list-group">
+           <a 
+           class="list-group-item" 
+           style="cursor:pointer" 
+           *ngFor="let ingredients of ( ingredients | async).ingredients; let i = index"
+           (click)="onEditItem(i)">
+           {{ingredients.name}} ({{ingredients.amount}})
+        </a>
+       </ul> 
+       <!-- ( ingredients | async). -->
+    </div>
+</div>
