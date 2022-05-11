@@ -3,8 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
-  firebaseAPIKey:'AIzaSyCFjYbmL03FUcLov_COyP86uUd0KMOoR1o',
+  production: true,
+  firebaseAPIKey:{
+    apikey:'AIzaSyCFjYbmL03FUcLov_COyP86uUd0KMOoR1o'
+  },
   baseUrl: 'https://ng-course-recipe-book-c33f8-default-rtdb.firebaseio.com/'
 };
 
